@@ -8,6 +8,10 @@
         $query=mysqli_query($connexion,$sql); 
         $res=mysqli_fetch_all($query);  
     }
+    else
+    {
+        header('location: index.php');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="FR">
@@ -21,15 +25,35 @@
         <?php include('header.php'); ?>
         <main id="element">
         <?php
-        $c=0;
+        
         foreach 
         ($res as $row) 
         {   
-            $c++;
+            switch ($row[4]) 
+            {
+                case 1:
+                    $mait="Faible";
+                    break;
+                case 2:
+                    $mait="Modérée";
+                    break;
+                case 3:
+                    $mait="Élevée";
+                    break;
+                default:
+                    $mait="inoconue";
+                    break;
+            }
+
             ?>
             <div>
                 <img src="perso/<?=$row[0]?>.jpg">
-                <b><?=$row[1]?></b>
+                <h1><?=$row[1]?></h1>
+                <b><?=$row[3]?></b>
+                <p>role :<?=$row[5]?></p>
+                <label>difficulté :<?=$mait?>
+                <progress value="<?=$row[4]?>" max="3">70 %</progress></label>
+                <p><?=$row[2]?></p>
             </div>
             <?php
         }

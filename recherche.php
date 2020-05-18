@@ -30,6 +30,7 @@
             <div>
                 <img src="perso/<?=$row[0]?>.jpg">
                 <b><?=$row[1]?></b>
+                <i><?=$row[3]?></i>
                 <a href="element.php?id=<?=$row[0]?>">voir plus</a>
             </div>
             <?php
