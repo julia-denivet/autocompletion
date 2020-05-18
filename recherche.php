@@ -1,13 +1,17 @@
 <?php
 
-    if(isset($_GET['search']))
-    {
+    
         $connexion=mysqli_connect('localhost','root','','autocompletion');
         mysqli_set_charset($connexion, "utf8");
+        if(!isset($_GET['search'])||empty($_GET['search']))
+        {
+            $_GET['search']="";
+            $err=true;
+        }    
         $sql="SELECT * FROM persolol WHERE nom LIKE '%".$_GET['search']."%'";
         $query=mysqli_query($connexion,$sql); 
         $res=mysqli_fetch_all($query);  
-    }
+    
 ?>
 <!DOCTYPE html>
 <html lang="FR">
@@ -21,19 +25,31 @@
         <?php include('header.php'); ?>
         <main id="res">
         <?php
-        $c=0;
-        foreach 
-        ($res as $row) 
-        {   
-            $c++;
+        if(isset($err))
+        {
             ?>
-            <div>
-                <img src="perso/<?=$row[0]?>.jpg">
-                <b><?=$row[1]?></b>
-                <i><?=$row[3]?></i>
-                <a href="element.php?id=<?=$row[0]?>">voir plus</a>
-            </div>
+            <u>Recherche vide</u>
             <?php
+        }
+        if(empty($res))
+        {
+            ?>
+            <b>Aucun combatant trouvé </b>
+            <?php
+        }
+        else
+        {
+            foreach ($res as $row) 
+            {   
+                ?>
+                <div>
+                    <img src="perso/<?=$row[0]?>.jpg">
+                    <b><?=$row[1]?></b>
+                    <i><?=$row[3]?></i>
+                    <a href="element.php?id=<?=$row[0]?>">voir plus</a>
+                </div>
+                <?php
+            }
         }
         ?>
         </main>
