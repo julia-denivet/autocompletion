@@ -1,0 +1,58 @@
+@font-face{
+    font-family: "Gil";
+    src: url("/font/GIL.TTF") format("truetype");
+}
+
+body
+{
+    margin: 0;
+    font-family: "Gil";
+    background-image: url("images/index.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    
+
+}
+
+
+
+/*HEADER*/
+
+
+#color_button_header
+{
+    color: #169198;
+    border-color: #169198;
+}
+
+.flex_recherche
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#datab{
+    position: absolute;
+    top: 65px;
+}
+
+/*INDEX*/
+
+#color_button_index
+{
+    color: #169198;
+    border-color: #169198;
+    background-color: aliceblue;
+}
+
+.position_barre_recherche
+{
+  margin-top: 400px;
+  margin-left: 800px;
+}
+
+.taille_recherche
+{
+    width: 400px;
+}
