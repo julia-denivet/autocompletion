@@ -64,103 +64,127 @@
     </head>
     <body>
         <?php include('header.php');?>
-        <main>
-        <section>
-            <h2>Tank(<?=$ntank[0][0]?>)</h2>
-            <?php
-                foreach ($tank as $i) 
-                {
-            ?>
-                <a href="element.php?id=<?=$i[0]?>">
-                    <div>
-                        <img src="perso/<?=$i[0]?>.jpg">
-                        <p><?=$i[1]?></p>
-                    </div>
-                </a>
-            <?php
-            }
-            ?>
-        </section>
-        <section>
-            <h2>Combattant(<?=$ncomb[0][0]?>)</h2>
-            <?php
-                foreach ($comb as $i) 
-                {
-            ?>
-                <a href="element.php?id=<?=$i[0]?>">
-                    <div>
-                        <img src="perso/<?=$i[0]?>.jpg">
-                        <p><?=$i[1]?></p>
-                    </div>
-                </a>
-            <?php
-            }
-            ?>
-        </section>
-        <section>
-            <h2>Mage(<?=$nmage[0][0]?>)</h2>
-            <?php
-                foreach ($mage as $i) 
-                {
-            ?>
-                <a href="element.php?id=<?=$i[0]?>">
-                    <div>
-                        <img src="perso/<?=$i[0]?>.jpg">
-                        <p><?=$i[1]?></p>
-                    </div>
-                </a>
-            <?php
-            }
-            ?>
-        </section>
-        <section>
-            <h2>Tireur(<?=$ntire[0][0]?>)</h2>
-            <?php
-                foreach ($tire as $i) 
-                {
-            ?>
-                <a href="element.php?id=<?=$i[0]?>">
-                    <div>
-                        <img src="perso/<?=$i[0]?>.jpg">
-                        <p><?=$i[1]?></p>
-                    </div>
-                </a>
-            <?php
-            }
-            ?>
-        </section>
-        <section>
-            <h2>Support(<?=$nsupp[0][0]?>)</h2>
-            <?php
-                foreach ($supp as $i) 
-                {
-                    ?>
-                    <a href="element.php?id=<?=$i[0]?>">
-                    <div>
-                        <img src="perso/<?=$i[0]?>.jpg">
-                        <p><?=$i[1]?></p>
-                    </div>
-                    </a>
+        <main class="flex_main_champion container">
+            <section class="flex_section_champion">
+                <article>
+                    <h2 class="h2_champion">Tank(<?=$ntank[0][0]?>)</h2>
+                </article>
+                <article class="flex_images_champion">
                     <?php
-                }
-            ?>
-        </section>
-        <section>
-            <h2>Assassin(<?=$nassa[0][0]?>)</h2>
-            <?php
-                foreach ($assa as $i) 
-                {
-            ?>
-                <a href="element.php?id=<?=$i[0]?>">
-                    <div>
-                        <img src="perso/<?=$i[0]?>.jpg">
-                        <p><?=$i[1]?></p>
-                    </div>
-                </a>
-            <?php
-            }
-            ?>
-        </section>
+                        foreach ($tank as $i) 
+                        {
+                    ?>
+                        <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
+                            <div>
+                                <img src="perso/<?=$i[0]?>.jpg">
+                                <p><?=$i[1]?></p>
+                            </div>
+                        </a>
+                    <?php
+                    }
+                    ?>
+                </article>  
+            </section>
+            <section class="flex_section_champion">
+                <article>
+                    <h2 class="h2_champion">Combattant(<?=$ncomb[0][0]?>)</h2>
+                </article>
+                <article class="flex_images_champion">
+                    <?php
+                        foreach ($comb as $i) 
+                        {
+                    ?>
+                        <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
+                            <div>
+                                <img src="perso/<?=$i[0]?>.jpg">
+                                <p><?=$i[1]?></p>
+                            </div>
+                        </a>
+                    <?php
+                    }
+                    ?>                    
+                </article>
+            </section>
+            <section class="flex_section_champion">
+                <article>
+                    <h2 class="h2_champion">Mage(<?=$nmage[0][0]?>)</h2>
+                </article>
+                <article class="flex_images_champion">
+                    <?php
+                        foreach ($mage as $i) 
+                        {
+                    ?>
+                        <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
+                            <div>
+                                <img src="perso/<?=$i[0]?>.jpg">
+                                <p><?=$i[1]?></p>
+                            </div>
+                        </a>
+                    <?php
+                    }
+                    ?>
+                </article>
+            </section>
+            <section class="flex_section_champion">
+                <article>
+                    <h2 class="h2_champion">Tireur(<?=$ntire[0][0]?>)</h2>                
+                </article>
+                <article class="flex_images_champion">
+                    <?php
+                        foreach ($tire as $i) 
+                        {
+                    ?>
+                        <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
+                            <div>
+                                <img src="perso/<?=$i[0]?>.jpg">
+                                <p><?=$i[1]?></p>
+                            </div>
+                        </a>
+                    <?php
+                    }
+                    ?>
+                </article>
+            </section>
+            <section class="flex_section_champion">
+                <article>
+                    <h2 class="h2_champion">Support(<?=$nsupp[0][0]?>)</h2>
+                </article>
+                <article class="flex_images_champion">
+                    <?php
+                        foreach ($supp as $i) 
+                        {
+                            ?>
+                            <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
+                            <div>
+                                <img src="perso/<?=$i[0]?>.jpg">
+                                <p><?=$i[1]?></p>
+                            </div>
+                            </a>
+                            <?php
+                        }
+                    ?>
+                </article>
+            </section>
+            <section class="flex_section_champion">
+                <article>
+                    <h2 class="h2_champion">Assassin(<?=$nassa[0][0]?>)</h2>
+                </article>
+                <article class="flex_images_champion">
+                    <?php
+                        foreach ($assa as $i) 
+                        {
+                    ?>
+                        <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
+                            <div>
+                                <img src="perso/<?=$i[0]?>.jpg">
+                                <p><?=$i[1]?></p>
+                            </div>
+                        </a>
+                    <?php
+                    }
+                    ?>
+                </article>
+            </section>
         </main>
     </body>
 </html>

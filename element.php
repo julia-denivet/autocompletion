@@ -27,7 +27,7 @@
     </head>
     <body id="">
         <?php include('header.php'); ?>
-        <main id="element">
+        <main id="element" class="container">
         <?php
         
         foreach 
@@ -50,8 +50,8 @@
             }
 
             ?>
-            <div>
-                <img src="perso/<?=$row[0]?>.jpg">
+            <div class="flex_element">
+                <img class="width_element" src="perso/<?=$row[0]?>.jpg">
                 <h1><?=$row[1]?></h1>
                 <b><?=$row[3]?></b>
                 <p>role :<?=$row[5]?></p>

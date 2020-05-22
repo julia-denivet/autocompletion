@@ -15,7 +15,7 @@
         <?php include('header.php');?>
         <main id="main-ind">
 
-                <form action="recherche.php" method="get" class="form-inline my-2 my-lg-0">
+                <form action="recherche.php" method="get" class="form-inline my-2 my-lg-0 col-10">
                         <section class="flex_recherche">
                             <article class="position_barre_recherche">
                                     <input class="form-control mr-sm-2  " list="data"  id="autoa" type="text" onkeyup="autocomp('0')" name="search" />
