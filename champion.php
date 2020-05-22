@@ -76,8 +76,8 @@
                     ?>
                         <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
                             <div>
-                                <img src="perso/<?=$i[0]?>.jpg">
-                                <p><?=$i[1]?></p>
+                                <img class="image_champion" src="perso/<?=$i[0]?>.jpg">
+                                <p class="p_champion"><?=$i[1]?></p>
                             </div>
                         </a>
                     <?php
@@ -96,8 +96,8 @@
                     ?>
                         <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
                             <div>
-                                <img src="perso/<?=$i[0]?>.jpg">
-                                <p><?=$i[1]?></p>
+                                <img class="image_champion" src="perso/<?=$i[0]?>.jpg">
+                                <p class="p_champion"><?=$i[1]?></p>
                             </div>
                         </a>
                     <?php
@@ -116,8 +116,8 @@
                     ?>
                         <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
                             <div>
-                                <img src="perso/<?=$i[0]?>.jpg">
-                                <p><?=$i[1]?></p>
+                                <img class="image_champion" src="perso/<?=$i[0]?>.jpg">
+                                <p class="p_champion"><?=$i[1]?></p>
                             </div>
                         </a>
                     <?php
@@ -136,8 +136,8 @@
                     ?>
                         <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
                             <div>
-                                <img src="perso/<?=$i[0]?>.jpg">
-                                <p><?=$i[1]?></p>
+                                <img class="image_champion" src="perso/<?=$i[0]?>.jpg">
+                                <p class="p_champion"><?=$i[1]?></p>
                             </div>
                         </a>
                     <?php
@@ -156,8 +156,8 @@
                             ?>
                             <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
                             <div>
-                                <img src="perso/<?=$i[0]?>.jpg">
-                                <p><?=$i[1]?></p>
+                                <img class="image_champion" src="perso/<?=$i[0]?>.jpg">
+                                <p class="p_champion"><?=$i[1]?></p>
                             </div>
                             </a>
                             <?php
@@ -176,8 +176,8 @@
                     ?>
                         <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
                             <div>
-                                <img src="perso/<?=$i[0]?>.jpg">
-                                <p><?=$i[1]?></p>
+                                <img class="image_champion" src="perso/<?=$i[0]?>.jpg">
+                                <p class="p_champion"><?=$i[1]?></p>
                             </div>
                         </a>
                     <?php

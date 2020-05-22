@@ -85,6 +85,7 @@ body
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+   
 }
 
 .lien_champion
@@ -110,4 +111,14 @@ body
 .width_element
 {
     width: 300px;;
+}
+
+.image_champion
+{
+    margin-left: 5px;
+}
+
+.p_champion
+{
+    text-align: center;
 }
