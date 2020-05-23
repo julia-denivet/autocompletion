@@ -1,6 +1,4 @@
 <?php
-
-    
         $connexion=mysqli_connect('localhost','root','','autocompletion');
         mysqli_set_charset($connexion, "utf8");
         if(!isset($_GET['search'])||empty($_GET['search']))
@@ -27,7 +25,7 @@
     </head>
     <body id="">
         <?php include('header.php'); ?>
-        <main id="res">
+        <main id="res" class="container">
         <?php
         if(isset($err))
         {

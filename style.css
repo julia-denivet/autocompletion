@@ -47,7 +47,7 @@ header
 {
    font-family: 'Germania One', cursive;
    font-size: 3vh;
-   color: #30dcfa !important;
+   color: #a0f1ff !important;
    text-shadow: 2px 2px 4px black;
 }
 #datab > .lien_champion>img
@@ -81,6 +81,7 @@ header
 {
     font-size: 150%;
 }
+
 .lien_champion:hover
 {
     background-color: #5ab7ae91;
@@ -151,6 +152,7 @@ header
     display: flex;
     justify-content: space-between;
     padding: 1%;
+    transition: background-color 0.5s;
 }
 
 /*ELEMENT*/
@@ -161,11 +163,34 @@ header
     flex-direction: column;
     color: aliceblue;
     text-shadow: 2px 2px 3px black;
-    width: 250px;
-    margin-left: 400px;
-    margin-top: 10px;
+    margin: 1%;
+    margin-top: 2%;
+    align-items: center;
+    font-family: 'Germania One', cursive;
+
+}
+.flex_element > b
+{
+    font-size: 4vw;
 }
 
+.flex_element > p
+{
+    padding: 1%;
+    background-color: #5f9ea05c;
+    font-size: 1.5vw;
+}
+.flex_element > label
+{
+    font-size: larger;
+}
+
+.corec
+{
+    width: 10%;
+    flex-direction: column;
+    align-items: center;
+}
 .width_element
 {
     width: 300px;;
@@ -179,4 +204,18 @@ header
 .p_champion
 {
     text-align: center;
+}
+/*RECHERCH*/
+#res
+{
+    background-color: #8a2be269;
+    font-family: 'Germania One', cursive;
+    text-shadow: 2px 2px 4px black;
+    color: white;
+    margin-top: 3%;
+    box-shadow: 0px 0px 6px wheat;
+}
+#res>div
+{
+    padding: 1%;
 }

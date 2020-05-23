@@ -51,12 +51,12 @@
 
             ?>
             <div class="flex_element">
+                <b><?=$row[3]?></b>
                 <img class="width_element" src="perso/<?=$row[0]?>.jpg">
                 <h1><?=$row[1]?></h1>
-                <b><?=$row[3]?></b>
-                <p>role :<?=$row[5]?></p>
-                <label>difficulté :<?=$mait?>
-                <progress value="<?=$row[4]?>" max="3">70 %</progress></label>
+                <p>Role :<?=$row[5]?></p>
+                <label>Difficulté : <?=$mait?>
+                <progress value="<?=$row[4]?>" max="3"> 70 % </progress></label>
                 <p><?=$row[2]?></p>
             </div>
             <?php

@@ -74,7 +74,7 @@
                         foreach ($tank as $i) 
                         {
                     ?>
-                        <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
+                        <a class="lien_champion corec" href="element.php?id=<?=$i[0]?>">
                             <div>
                                 <img class="image_champion" src="perso/<?=$i[0]?>.jpg">
                                 <p class="p_champion"><?=$i[1]?></p>
@@ -94,7 +94,7 @@
                         foreach ($comb as $i) 
                         {
                     ?>
-                        <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
+                        <a class="lien_champion  corec" href="element.php?id=<?=$i[0]?>">
                             <div>
                                 <img class="image_champion" src="perso/<?=$i[0]?>.jpg">
                                 <p class="p_champion"><?=$i[1]?></p>
@@ -114,7 +114,7 @@
                         foreach ($mage as $i) 
                         {
                     ?>
-                        <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
+                        <a class="lien_champion  corec" href="element.php?id=<?=$i[0]?>">
                             <div>
                                 <img class="image_champion" src="perso/<?=$i[0]?>.jpg">
                                 <p class="p_champion"><?=$i[1]?></p>
@@ -134,7 +134,7 @@
                         foreach ($tire as $i) 
                         {
                     ?>
-                        <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
+                        <a class="lien_champion  corec" href="element.php?id=<?=$i[0]?>">
                             <div>
                                 <img class="image_champion" src="perso/<?=$i[0]?>.jpg">
                                 <p class="p_champion"><?=$i[1]?></p>
@@ -154,7 +154,7 @@
                         foreach ($supp as $i) 
                         {
                             ?>
-                            <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
+                            <a class="lien_champion  corec" href="element.php?id=<?=$i[0]?>">
                             <div>
                                 <img class="image_champion" src="perso/<?=$i[0]?>.jpg">
                                 <p class="p_champion"><?=$i[1]?></p>
@@ -174,7 +174,7 @@
                         foreach ($assa as $i) 
                         {
                     ?>
-                        <a class="lien_champion" href="element.php?id=<?=$i[0]?>">
+                        <a class="lien_champion  corec" href="element.php?id=<?=$i[0]?>">
                             <div>
                                 <img class="image_champion" src="perso/<?=$i[0]?>.jpg">
                                 <p class="p_champion"><?=$i[1]?></p>
